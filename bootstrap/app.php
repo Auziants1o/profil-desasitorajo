@@ -15,6 +15,25 @@ $app = new Illuminate\Foundation\Application(
     $_ENV['APP_BASE_PATH'] ?? dirname(__DIR__)
 );
 
+// Vercel Serverless read-only filesystem fix
+if (isset($_ENV['VERCEL']) || env('APP_ENV') === 'production') {
+    $app->useStoragePath('/tmp');
+    
+    // Create necessary directories in /tmp
+    $dirs = [
+        '/tmp/framework/views',
+        '/tmp/framework/cache',
+        '/tmp/framework/cache/data',
+        '/tmp/framework/sessions',
+        '/tmp/logs',
+    ];
+    foreach ($dirs as $dir) {
+        if (!is_dir($dir)) {
+            mkdir($dir, 0777, true);
+        }
+    }
+}
+
 /*
 |--------------------------------------------------------------------------
 | Bind Important Interfaces
