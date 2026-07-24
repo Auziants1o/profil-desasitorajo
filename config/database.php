@@ -58,10 +58,12 @@ return [
             'prefix_indexes' => true,
             'strict' => true,
             'engine' => null,
-            'options' => extension_loaded('pdo_mysql') ? [
-                PDO::MYSQL_ATTR_SSL_VERIFY_SERVER_CERT => false,
-                PDO::MYSQL_ATTR_SSL_CA => null,
-            ] : [],
+            'options' => extension_loaded('pdo_mysql') ? (function () {
+                $sslVerifyKey = defined('Pdo\Mysql::ATTR_SSL_VERIFY_SERVER_CERT')
+                    ? \Pdo\Mysql::ATTR_SSL_VERIFY_SERVER_CERT
+                    : PDO::MYSQL_ATTR_SSL_VERIFY_SERVER_CERT;
+                return [$sslVerifyKey => false];
+            })() : [],
         ],
 
         'pgsql' => [
