@@ -15,7 +15,10 @@ $app = new Illuminate\Foundation\Application(
     $_ENV['APP_BASE_PATH'] ?? dirname(__DIR__)
 );
 
-// Removed Vercel specific boot hooks
+// Vercel: redirect storage to writable /tmp directory
+if (!empty($_ENV['LARAVEL_STORAGE_PATH'])) {
+    $app->useStoragePath($_ENV['LARAVEL_STORAGE_PATH']);
+}
 
 /*
 |--------------------------------------------------------------------------
