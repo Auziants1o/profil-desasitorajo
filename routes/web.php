@@ -11,7 +11,6 @@ Route::get('/kebudayaan', [PublicController::class, 'kebudayaan'])->name('kebuda
 Route::get('/struktur', [PublicController::class, 'struktur'])->name('struktur');
 Route::get('/perangkat', [PublicController::class, 'perangkat'])->name('perangkat');
 Route::get('/data-penduduk', [PublicController::class, 'dataPenduduk'])->name('data-penduduk');
-Route::get('/potensi', [PublicController::class, 'potensi'])->name('potensi');
 Route::get('/galeri-foto', [PublicController::class, 'galeriFoto'])->name('galeri-foto');
 
 Route::get('/kontak', [PublicController::class, 'kontak'])->name('kontak');

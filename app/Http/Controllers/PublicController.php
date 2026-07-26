@@ -46,8 +46,6 @@ class PublicController extends Controller
         return view('data-penduduk', compact('jenisKelamin', 'pendidikan', 'totalPenduduk'));
     }
 
-    public function potensi() { return view('potensi'); }
-
     public function galeriFoto()
     {
         $foto = collect([

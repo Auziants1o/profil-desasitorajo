@@ -238,10 +238,6 @@
                 <div class="qm-icon" style="background:#dbeafe;color:#2563eb"><i class="fas fa-images"></i></div>
                 <h3>Galeri Foto</h3><p>Dokumentasi kegiatan</p>
             </a>
-            <a href="{{ route('potensi') }}" class="qm-item">
-                <div class="qm-icon" style="background:#d1fae5;color:#059669"><i class="fas fa-mountain-sun"></i></div>
-                <h3>Potensi Desa</h3><p>Kekayaan alam & wisata</p>
-            </a>
             <a href="{{ route('peta') }}" class="qm-item">
                 <div class="qm-icon" style="background:#fce7f3;color:#db2777"><i class="fas fa-map-location-dot"></i></div>
                 <h3>Peta Lokasi</h3><p>Temukan kami di sini</p>

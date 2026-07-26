@@ -203,7 +203,6 @@
                 <button class="nav-dropdown-trigger">Kependudukan <i class="fas fa-chevron-down" style="font-size:10px"></i></button>
                 <div class="nav-dropdown" x-show="open" x-transition style="display:none;">
                     <a href="{{ route('data-penduduk') }}"><i class="fas fa-chart-pie"></i>Data Penduduk</a>
-                    <a href="{{ route('potensi') }}"><i class="fas fa-mountain-sun"></i>Potensi Desa</a>
                 </div>
             </li>
 
@@ -240,7 +239,6 @@
         <a href="{{ route('perangkat') }}">Perangkat Desa</a>
         <div class="m-group-title">Kependudukan</div>
         <a href="{{ route('data-penduduk') }}">Data Penduduk</a>
-        <a href="{{ route('potensi') }}">Potensi Desa</a>
         <div class="m-group-title">Galeri & Informasi</div>
         <a href="{{ route('galeri-foto') }}">Galeri Foto</a>
         <a href="{{ route('kontak') }}">Kontak</a>
@@ -282,7 +280,6 @@
                 <h4>Layanan</h4>
                 <ul>
                     <li><a href="{{ route('data-penduduk') }}"><i class="fas fa-chevron-right"></i>Data Penduduk</a></li>
-                    <li><a href="{{ route('potensi') }}"><i class="fas fa-chevron-right"></i>Potensi Desa</a></li>
                     <li><a href="{{ route('galeri-foto') }}"><i class="fas fa-chevron-right"></i>Galeri Foto</a></li>
                     <li><a href="{{ route('peta') }}"><i class="fas fa-chevron-right"></i>Peta Lokasi</a></li>
                 </ul>
