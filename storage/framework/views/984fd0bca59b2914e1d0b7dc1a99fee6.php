@@ -84,7 +84,7 @@
 }
 .stats-row .inner {
     max-width: 1280px; margin: 0 auto; padding: 0 32px;
-    display: grid; grid-template-columns: repeat(4, 1fr);
+    display: grid; grid-template-columns: repeat(3, 1fr);
     gap: 20px;
 }
 .stats-row .s-card {
@@ -196,11 +196,6 @@
             <div class="s-lbl">Kepala Keluarga</div>
         </div>
         <div class="s-card">
-            <div class="s-icon"><i class="fas fa-map-marker-alt"></i></div>
-            <div class="s-num">3</div>
-            <div class="s-lbl">Dusun</div>
-        </div>
-        <div class="s-card">
             <div class="s-icon"><i class="fas fa-calendar"></i></div>
             <div class="s-num">1996</div>
             <div class="s-lbl">Tahun Berdiri</div>
@@ -236,10 +231,6 @@
             <a href="<?php echo e(route('galeri-foto')); ?>" class="qm-item">
                 <div class="qm-icon" style="background:#dbeafe;color:#2563eb"><i class="fas fa-images"></i></div>
                 <h3>Galeri Foto</h3><p>Dokumentasi kegiatan</p>
-            </a>
-            <a href="<?php echo e(route('potensi')); ?>" class="qm-item">
-                <div class="qm-icon" style="background:#d1fae5;color:#059669"><i class="fas fa-mountain-sun"></i></div>
-                <h3>Potensi Desa</h3><p>Kekayaan alam & wisata</p>
             </a>
             <a href="<?php echo e(route('peta')); ?>" class="qm-item">
                 <div class="qm-icon" style="background:#fce7f3;color:#db2777"><i class="fas fa-map-location-dot"></i></div>

@@ -46,20 +46,6 @@
                 <p style="font-size:15px;line-height:1.9;color:var(--text-muted);">
                     Pacu Jalur adalah perlombaan dayung perahu tradisional yang diselenggarakan di Sungai Kuantan. Setiap perahu (jalur) didayung oleh puluhan orang secara bersama-sama, mencerminkan semangat kebersamaan dan persatuan yang mengakar kuat dalam kehidupan masyarakat Kuantan Singingi.
                 </p>
-                <div style="margin-top: 28px; display: flex; gap: 16px; flex-wrap: wrap;">
-                    <div style="background: var(--bg-light); padding: 12px 20px; border-radius: 10px; border: 1px solid var(--border); text-align: center;">
-                        <div style="font-size: 20px; font-weight: 800; color: var(--primary);">Ratusan</div>
-                        <div style="font-size: 12px; color: var(--text-muted);">Peserta per Jalur</div>
-                    </div>
-                    <div style="background: var(--bg-light); padding: 12px 20px; border-radius: 10px; border: 1px solid var(--border); text-align: center;">
-                        <div style="font-size: 20px; font-weight: 800; color: var(--primary);">Tahunan</div>
-                        <div style="font-size: 12px; color: var(--text-muted);">Diselenggarakan</div>
-                    </div>
-                    <div style="background: var(--bg-light); padding: 12px 20px; border-radius: 10px; border: 1px solid var(--border); text-align: center;">
-                        <div style="font-size: 20px; font-weight: 800; color: var(--primary);">Warisan</div>
-                        <div style="font-size: 12px; color: var(--text-muted);">Budaya Lokal</div>
-                    </div>
-                </div>
             </div>
         </div>
     </div>
