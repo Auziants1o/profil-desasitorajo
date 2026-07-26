@@ -13,7 +13,7 @@ class PublicController extends Controller
     public function beranda()
     {
         $totalPenduduk = 2043; // Hardcoded as requested
-        $totalPerangkat = Perangkat::count();
+        $totalPerangkat = 12; // Hardcoded to avoid DB query
         $galeri = collect([
             (object)['file' => '/images/momen/Hari%20Raya%20Idul%20Adha.jpg', 'judul' => 'Hari Raya Idul Adha'],
             (object)['file' => '/images/momen/Latihan%20Pacu%20Jalur%20Persiapan%20Rayon%202.jpeg', 'judul' => 'Latihan Pacu Jalur Persiapan Rayon 2'],
@@ -40,7 +40,8 @@ class PublicController extends Controller
 
     public function perangkat()
     {
-        $perangkat = Perangkat::orderBy('urutan')->get();
+        // Hardcoded while DB is offline
+        $perangkat = collect([]);
         return view('perangkat', compact('perangkat'));
     }
 
