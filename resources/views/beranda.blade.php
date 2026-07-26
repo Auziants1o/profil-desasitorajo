@@ -176,7 +176,7 @@
 <!-- ===== HERO ===== -->
 <section class="hero">
     <video autoplay loop muted playsinline class="hero-video" id="bgVideo">
-        <source src="{{ asset('images/beranda/lv_0_20260727022955.mp4') }}" type="video/mp4">
+        <source src="{{ asset('images/beranda/lv_7620500222858349831_20260721151031.mp4') }}" type="video/mp4">
     </video>
     <div class="hero-pattern" style="z-index: 1;"></div>
     <div class="hero-content">
