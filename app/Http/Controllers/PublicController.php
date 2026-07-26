@@ -40,8 +40,16 @@ class PublicController extends Controller
 
     public function dataPenduduk()
     {
-        $jenisKelamin = Penduduk::where('kategori', 'jenis_kelamin')->get();
-        $pendidikan = Penduduk::where('kategori', 'pendidikan')->get();
+        $jenisKelamin = collect([
+            (object)['nama' => 'Laki-Laki', 'jumlah' => 1031],
+            (object)['nama' => 'Perempuan',  'jumlah' => 1012],
+        ]);
+        $pendidikan = collect([
+            (object)['nama' => 'SD',       'jumlah' => 581],
+            (object)['nama' => 'SMP',      'jumlah' => 105],
+            (object)['nama' => 'SMA/SMK',  'jumlah' => 95],
+            (object)['nama' => 'Sarjana',  'jumlah' => 123],
+        ]);
         $totalPenduduk = 2043;
         return view('data-penduduk', compact('jenisKelamin', 'pendidikan', 'totalPenduduk'));
     }
