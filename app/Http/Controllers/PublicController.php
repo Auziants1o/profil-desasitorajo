@@ -15,19 +15,19 @@ class PublicController extends Controller
         $totalPenduduk = 2043; // Hardcoded as requested
         $totalPerangkat = Perangkat::count();
         $galeri = collect([
-            (object)['file' => '/images/momen/WhatsApp%20Image%202026-07-27%20at%2001.29.24.jpeg', 'judul' => 'Momen Terbaru'],
-            (object)['file' => '/images/momen/WhatsApp%20Image%202026-07-27%20at%2001.29.25.jpeg', 'judul' => 'Kegiatan Warga'],
-            (object)['file' => '/images/momen/WhatsApp%20Image%202026-07-27%20at%2001.29.43.jpeg', 'judul' => 'Aktivitas Desa'],
-            (object)['file' => '/images/momen/WhatsApp%20Image%202026-07-27%20at%2001.31.28.jpeg', 'judul' => 'Momen Bersama'],
-            (object)['file' => '/images/momen/WhatsApp%20Image%202026-07-27%20at%2001.32.24.jpeg', 'judul' => 'Gotong Royong'],
-            (object)['file' => '/images/momen/WhatsApp%20Image%202026-07-27%20at%2001.33.37.jpeg', 'judul' => 'Acara Desa'],
-            (object)['file' => '/images/momen/WhatsApp%20Image%202026-07-16%20at%2017.04.40%20(1).jpeg', 'judul' => 'Kegiatan Desa'],
-            (object)['file' => '/images/momen/WhatsApp%20Image%202026-07-16%20at%2017.04.40.jpeg', 'judul' => 'Kegiatan Warga'],
-            (object)['file' => '/images/momen/_2564_Panen-Raya-Jagung-Pipil-di-Sitorajo-Kari--Camat-Kuantan-Tengah-Apresiasi-Program-Ketahanan-Pangan.jpg', 'judul' => 'Panen Raya Jagung'],
-            (object)['file' => '/images/momen/IMG-20240617-WA0152.jpg', 'judul' => 'Momen Bersama'],
-            (object)['file' => '/images/momen/WhatsApp%20Image%202026-06-29%20at%2016.35.14.jpeg', 'judul' => 'Aktivitas Desa'],
-            (object)['file' => '/images/momen/WhatsApp%20Image%202026-07-03%20at%2007.36.37.jpeg', 'judul' => 'Gotong Royong'],
-            (object)['file' => '/images/momen/WhatsApp%20Image%202026-07-21%20at%2022.32.40.jpeg', 'judul' => 'Acara Desa'],
+            (object)['file' => '/images/momen/Hari%20Raya%20Idul%20Adha.jpg', 'judul' => 'Hari Raya Idul Adha'],
+            (object)['file' => '/images/momen/Latihan%20Pacu%20Jalur%20Persiapan%20Rayon%202.jpeg', 'judul' => 'Latihan Pacu Jalur Persiapan Rayon 2'],
+            (object)['file' => '/images/momen/Latihan%20Pacu%20Jalur%20Persiapan%20Rayon%204.jpeg', 'judul' => 'Latihan Pacu Jalur Persiapan Rayon 4'],
+            (object)['file' => '/images/momen/Pacu%20Jalur%20Tapian%20Datuok%20Bandaro%20Pasar%20Gunung.jpeg', 'judul' => 'Pacu Jalur Tapian Datuok Bandaro Pasar Gunung'],
+            (object)['file' => '/images/momen/Pacu%20Jalur%20Tapian%20Narosa%20Teluk%20Kuantan.jpeg', 'judul' => 'Pacu Jalur Tapian Narosa Teluk Kuantan'],
+            (object)['file' => '/images/momen/Panen%20Jagung%20Pipil.jpg', 'judul' => 'Panen Jagung Pipil'],
+            (object)['file' => '/images/momen/Pawai%20Pembukaan%20MTQ.jpeg', 'judul' => 'Pawai Pembukaan MTQ'],
+            (object)['file' => '/images/momen/Penanaman%20Toga.jpeg', 'judul' => 'Penanaman Toga'],
+            (object)['file' => '/images/momen/Persesi.jpeg', 'judul' => 'Persesi'],
+            (object)['file' => '/images/momen/Pertandingan%20di%20Petai.jpeg', 'judul' => 'Pertandingan di Petai'],
+            (object)['file' => '/images/momen/Posyandu.jpeg', 'judul' => 'Posyandu'],
+            (object)['file' => '/images/momen/SD%20021%20Sitorajo.jpeg', 'judul' => 'SD 021 Sitorajo'],
+            (object)['file' => '/images/momen/Senam%20Pagi.jpeg', 'judul' => 'Senam Pagi'],
         ]);
         $galeriTerbaru = $galeri;
         return view('beranda', compact('totalPenduduk', 'totalPerangkat', 'galeriTerbaru'));
@@ -63,19 +63,19 @@ class PublicController extends Controller
     public function galeriFoto()
     {
         $foto = collect([
-            (object)['file' => '/images/momen/WhatsApp%20Image%202026-07-27%20at%2001.29.24.jpeg', 'judul' => 'Momen Terbaru'],
-            (object)['file' => '/images/momen/WhatsApp%20Image%202026-07-27%20at%2001.29.25.jpeg', 'judul' => 'Kegiatan Warga'],
-            (object)['file' => '/images/momen/WhatsApp%20Image%202026-07-27%20at%2001.29.43.jpeg', 'judul' => 'Aktivitas Desa'],
-            (object)['file' => '/images/momen/WhatsApp%20Image%202026-07-27%20at%2001.31.28.jpeg', 'judul' => 'Momen Bersama'],
-            (object)['file' => '/images/momen/WhatsApp%20Image%202026-07-27%20at%2001.32.24.jpeg', 'judul' => 'Gotong Royong'],
-            (object)['file' => '/images/momen/WhatsApp%20Image%202026-07-27%20at%2001.33.37.jpeg', 'judul' => 'Acara Desa'],
-            (object)['file' => '/images/momen/WhatsApp%20Image%202026-07-16%20at%2017.04.40%20(1).jpeg', 'judul' => 'Kegiatan Desa'],
-            (object)['file' => '/images/momen/WhatsApp%20Image%202026-07-16%20at%2017.04.40.jpeg', 'judul' => 'Kegiatan Warga'],
-            (object)['file' => '/images/momen/_2564_Panen-Raya-Jagung-Pipil-di-Sitorajo-Kari--Camat-Kuantan-Tengah-Apresiasi-Program-Ketahanan-Pangan.jpg', 'judul' => 'Panen Raya Jagung'],
-            (object)['file' => '/images/momen/IMG-20240617-WA0152.jpg', 'judul' => 'Momen Bersama'],
-            (object)['file' => '/images/momen/WhatsApp%20Image%202026-06-29%20at%2016.35.14.jpeg', 'judul' => 'Aktivitas Desa'],
-            (object)['file' => '/images/momen/WhatsApp%20Image%202026-07-03%20at%2007.36.37.jpeg', 'judul' => 'Gotong Royong'],
-            (object)['file' => '/images/momen/WhatsApp%20Image%202026-07-21%20at%2022.32.40.jpeg', 'judul' => 'Acara Desa'],
+            (object)['file' => '/images/momen/Hari%20Raya%20Idul%20Adha.jpg', 'judul' => 'Hari Raya Idul Adha'],
+            (object)['file' => '/images/momen/Latihan%20Pacu%20Jalur%20Persiapan%20Rayon%202.jpeg', 'judul' => 'Latihan Pacu Jalur Persiapan Rayon 2'],
+            (object)['file' => '/images/momen/Latihan%20Pacu%20Jalur%20Persiapan%20Rayon%204.jpeg', 'judul' => 'Latihan Pacu Jalur Persiapan Rayon 4'],
+            (object)['file' => '/images/momen/Pacu%20Jalur%20Tapian%20Datuok%20Bandaro%20Pasar%20Gunung.jpeg', 'judul' => 'Pacu Jalur Tapian Datuok Bandaro Pasar Gunung'],
+            (object)['file' => '/images/momen/Pacu%20Jalur%20Tapian%20Narosa%20Teluk%20Kuantan.jpeg', 'judul' => 'Pacu Jalur Tapian Narosa Teluk Kuantan'],
+            (object)['file' => '/images/momen/Panen%20Jagung%20Pipil.jpg', 'judul' => 'Panen Jagung Pipil'],
+            (object)['file' => '/images/momen/Pawai%20Pembukaan%20MTQ.jpeg', 'judul' => 'Pawai Pembukaan MTQ'],
+            (object)['file' => '/images/momen/Penanaman%20Toga.jpeg', 'judul' => 'Penanaman Toga'],
+            (object)['file' => '/images/momen/Persesi.jpeg', 'judul' => 'Persesi'],
+            (object)['file' => '/images/momen/Pertandingan%20di%20Petai.jpeg', 'judul' => 'Pertandingan di Petai'],
+            (object)['file' => '/images/momen/Posyandu.jpeg', 'judul' => 'Posyandu'],
+            (object)['file' => '/images/momen/SD%20021%20Sitorajo.jpeg', 'judul' => 'SD 021 Sitorajo'],
+            (object)['file' => '/images/momen/Senam%20Pagi.jpeg', 'judul' => 'Senam Pagi'],
         ]);
         return view('galeri-foto', compact('foto'));
     }
