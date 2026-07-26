@@ -15,6 +15,12 @@ class PublicController extends Controller
         $totalPenduduk = 2043; // Hardcoded as requested
         $totalPerangkat = Perangkat::count();
         $galeri = collect([
+            (object)['file' => '/images/momen/WhatsApp%20Image%202026-07-27%20at%2001.29.24.jpeg', 'judul' => 'Momen Terbaru'],
+            (object)['file' => '/images/momen/WhatsApp%20Image%202026-07-27%20at%2001.29.25.jpeg', 'judul' => 'Kegiatan Warga'],
+            (object)['file' => '/images/momen/WhatsApp%20Image%202026-07-27%20at%2001.29.43.jpeg', 'judul' => 'Aktivitas Desa'],
+            (object)['file' => '/images/momen/WhatsApp%20Image%202026-07-27%20at%2001.31.28.jpeg', 'judul' => 'Momen Bersama'],
+            (object)['file' => '/images/momen/WhatsApp%20Image%202026-07-27%20at%2001.32.24.jpeg', 'judul' => 'Gotong Royong'],
+            (object)['file' => '/images/momen/WhatsApp%20Image%202026-07-27%20at%2001.33.37.jpeg', 'judul' => 'Acara Desa'],
             (object)['file' => '/images/momen/WhatsApp%20Image%202026-07-16%20at%2017.04.40%20(1).jpeg', 'judul' => 'Kegiatan Desa'],
             (object)['file' => '/images/momen/WhatsApp%20Image%202026-07-16%20at%2017.04.40.jpeg', 'judul' => 'Kegiatan Warga'],
             (object)['file' => '/images/momen/_2564_Panen-Raya-Jagung-Pipil-di-Sitorajo-Kari--Camat-Kuantan-Tengah-Apresiasi-Program-Ketahanan-Pangan.jpg', 'judul' => 'Panen Raya Jagung'],
@@ -57,6 +63,12 @@ class PublicController extends Controller
     public function galeriFoto()
     {
         $foto = collect([
+            (object)['file' => '/images/momen/WhatsApp%20Image%202026-07-27%20at%2001.29.24.jpeg', 'judul' => 'Momen Terbaru'],
+            (object)['file' => '/images/momen/WhatsApp%20Image%202026-07-27%20at%2001.29.25.jpeg', 'judul' => 'Kegiatan Warga'],
+            (object)['file' => '/images/momen/WhatsApp%20Image%202026-07-27%20at%2001.29.43.jpeg', 'judul' => 'Aktivitas Desa'],
+            (object)['file' => '/images/momen/WhatsApp%20Image%202026-07-27%20at%2001.31.28.jpeg', 'judul' => 'Momen Bersama'],
+            (object)['file' => '/images/momen/WhatsApp%20Image%202026-07-27%20at%2001.32.24.jpeg', 'judul' => 'Gotong Royong'],
+            (object)['file' => '/images/momen/WhatsApp%20Image%202026-07-27%20at%2001.33.37.jpeg', 'judul' => 'Acara Desa'],
             (object)['file' => '/images/momen/WhatsApp%20Image%202026-07-16%20at%2017.04.40%20(1).jpeg', 'judul' => 'Kegiatan Desa'],
             (object)['file' => '/images/momen/WhatsApp%20Image%202026-07-16%20at%2017.04.40.jpeg', 'judul' => 'Kegiatan Warga'],
             (object)['file' => '/images/momen/_2564_Panen-Raya-Jagung-Pipil-di-Sitorajo-Kari--Camat-Kuantan-Tengah-Apresiasi-Program-Ketahanan-Pangan.jpg', 'judul' => 'Panen Raya Jagung'],
