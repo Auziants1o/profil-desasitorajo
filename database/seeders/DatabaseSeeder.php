@@ -49,23 +49,13 @@ class DatabaseSeeder extends Seeder
         // 3. Data Penduduk
         $penduduk = [
             // Jenis Kelamin
-            ['jenis_kelamin', 'Laki-Laki', 1250],
-            ['jenis_kelamin', 'Perempuan', 1320],
-            // Agama
-            ['agama', 'Islam', 2450],
-            ['agama', 'Kristen', 100],
-            ['agama', 'Katolik', 20],
-            // Pekerjaan
-            ['pekerjaan', 'Petani', 850],
-            ['pekerjaan', 'PNS', 120],
-            ['pekerjaan', 'Wiraswasta', 430],
-            ['pekerjaan', 'Pelajar/Mahasiswa', 650],
-            ['pekerjaan', 'Lainnya', 520],
+            ['jenis_kelamin', 'Laki-Laki', 1031],
+            ['jenis_kelamin', 'Perempuan', 1012],
             // Pendidikan
-            ['pendidikan', 'SD', 750],
-            ['pendidikan', 'SMP', 680],
-            ['pendidikan', 'SMA/SMK', 850],
-            ['pendidikan', 'Sarjana', 290],
+            ['pendidikan', 'SD', 581],
+            ['pendidikan', 'SMP', 105],
+            ['pendidikan', 'SMA/SMK', 95],
+            ['pendidikan', 'Sarjana', 123],
         ];
 
         foreach ($penduduk as $pd) {

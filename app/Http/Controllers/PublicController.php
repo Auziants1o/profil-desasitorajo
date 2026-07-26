@@ -41,11 +41,9 @@ class PublicController extends Controller
     public function dataPenduduk()
     {
         $jenisKelamin = Penduduk::where('kategori', 'jenis_kelamin')->get();
-        $agama = Penduduk::where('kategori', 'agama')->get();
-        $pekerjaan = Penduduk::where('kategori', 'pekerjaan')->get();
         $pendidikan = Penduduk::where('kategori', 'pendidikan')->get();
-        $totalPenduduk = 2043; // Hardcoded as requested
-        return view('data-penduduk', compact('jenisKelamin', 'agama', 'pekerjaan', 'pendidikan', 'totalPenduduk'));
+        $totalPenduduk = 2043;
+        return view('data-penduduk', compact('jenisKelamin', 'pendidikan', 'totalPenduduk'));
     }
 
     public function potensi() { return view('potensi'); }

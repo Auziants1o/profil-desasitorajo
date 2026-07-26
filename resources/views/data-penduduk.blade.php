@@ -37,27 +37,6 @@
                 </table>
             </div>
 
-            <!-- Berdasarkan Agama -->
-            <div class="card" style="padding: 24px;">
-                <h3 style="font-size: 18px; font-weight: 700; margin-bottom: 20px; border-bottom: 2px solid var(--border); padding-bottom: 10px;">Berdasarkan Agama</h3>
-                <table style="width: 100%; border-collapse: collapse;">
-                    <thead>
-                        <tr style="background: var(--bg-light); text-align: left;">
-                            <th style="padding: 12px; border: 1px solid var(--border);">Keterangan</th>
-                            <th style="padding: 12px; border: 1px solid var(--border); text-align: right;">Jumlah</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        @foreach($agama as $a)
-                        <tr>
-                            <td style="padding: 12px; border: 1px solid var(--border);">{{ $a->nama }}</td>
-                            <td style="padding: 12px; border: 1px solid var(--border); text-align: right;">{{ number_format($a->jumlah) }}</td>
-                        </tr>
-                        @endforeach
-                    </tbody>
-                </table>
-            </div>
-            
             <!-- Berdasarkan Pendidikan -->
             <div class="card" style="padding: 24px;">
                 <h3 style="font-size: 18px; font-weight: 700; margin-bottom: 20px; border-bottom: 2px solid var(--border); padding-bottom: 10px;">Berdasarkan Pendidikan</h3>
@@ -73,27 +52,6 @@
                         <tr>
                             <td style="padding: 12px; border: 1px solid var(--border);">{{ $p->nama }}</td>
                             <td style="padding: 12px; border: 1px solid var(--border); text-align: right;">{{ number_format($p->jumlah) }}</td>
-                        </tr>
-                        @endforeach
-                    </tbody>
-                </table>
-            </div>
-
-            <!-- Berdasarkan Pekerjaan -->
-            <div class="card" style="padding: 24px;">
-                <h3 style="font-size: 18px; font-weight: 700; margin-bottom: 20px; border-bottom: 2px solid var(--border); padding-bottom: 10px;">Berdasarkan Pekerjaan</h3>
-                <table style="width: 100%; border-collapse: collapse;">
-                    <thead>
-                        <tr style="background: var(--bg-light); text-align: left;">
-                            <th style="padding: 12px; border: 1px solid var(--border);">Keterangan</th>
-                            <th style="padding: 12px; border: 1px solid var(--border); text-align: right;">Jumlah</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        @foreach($pekerjaan as $pk)
-                        <tr>
-                            <td style="padding: 12px; border: 1px solid var(--border);">{{ $pk->nama }}</td>
-                            <td style="padding: 12px; border: 1px solid var(--border); text-align: right;">{{ number_format($pk->jumlah) }}</td>
                         </tr>
                         @endforeach
                     </tbody>
