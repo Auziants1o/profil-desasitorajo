@@ -17,9 +17,9 @@
     inset: 0;
     width: 100%;
     height: 100%;
-    object-fit: contain;
+    object-fit: cover;
     z-index: 0;
-    opacity: 0.5;
+    opacity: 0.35;
     background-color: #000;
 }
 /* Overlay gradient bawah agar menyatu ke stats-row */
@@ -161,6 +161,12 @@
     .stats-row .inner { grid-template-columns: repeat(2, 1fr); }
     .quick-menu, .umkm-grid, .galeri-grid { grid-template-columns: repeat(2, 1fr); }
     .cta-banner { flex-direction: column; text-align: center; }
+}
+@media (max-width: 768px) {
+    .hero-video {
+        object-fit: contain;
+        opacity: 0.5;
+    }
 }
 </style>
 @endsection

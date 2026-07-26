@@ -16,9 +16,10 @@
     inset: 0;
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    object-fit: contain;
     z-index: 0;
-    opacity: 0.35;
+    opacity: 0.5;
+    background-color: #000;
 }
 /* Overlay gradient bawah agar menyatu ke stats-row */
 .hero::after {
