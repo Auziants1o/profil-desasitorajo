@@ -57,7 +57,7 @@
                         <div style="width: 45px; height: 45px; border-radius: 10px; background: var(--bg-light); color: var(--primary); display: flex; align-items: center; justify-content: center; font-size: 20px; flex-shrink: 0;"><i class="fas fa-phone"></i></div>
                         <div>
                             <h4 style="font-size: 15px; font-weight: 700; margin-bottom: 5px;">Telepon / WhatsApp</h4>
-                            <p style="font-size: 14px; color: var(--text-muted);">+62 812 3456 7890</p>
+                            <p style="font-size: 14px; color: var(--text-muted);">082284297921</p>
                         </div>
                     </div>
                     <div style="display: flex; gap: 15px; align-items: flex-start;">

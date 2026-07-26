@@ -289,7 +289,7 @@
                 <h4>Kontak</h4>
                 <ul class="footer-contact">
                     <li><i class="fas fa-map-marker-alt"></i> Jalan Madrasah Sitorajo Kari</li>
-                    <li><i class="fas fa-phone"></i> (0xxx) xxx-xxxx</li>
+                    <li><i class="fas fa-phone"></i> 082284297921</li>
                     <li><i class="fas fa-envelope"></i> sitorajokari@gmail.com</li>
                     <li><i class="fas fa-clock"></i> Senin–Jumat: 08.00–16.00 WIB</li>
                 </ul>
