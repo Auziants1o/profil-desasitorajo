@@ -84,7 +84,7 @@
 }
 .stats-row .inner {
     max-width: 1280px; margin: 0 auto; padding: 0 32px;
-    display: grid; grid-template-columns: repeat(3, 1fr);
+    display: grid; grid-template-columns: repeat(4, 1fr);
     gap: 20px;
 }
 .stats-row .s-card {
@@ -194,6 +194,11 @@
             <div class="s-icon"><i class="fas fa-home"></i></div>
             <div class="s-num">567</div>
             <div class="s-lbl">Kepala Keluarga</div>
+        </div>
+        <div class="s-card">
+            <div class="s-icon"><i class="fas fa-map-marker-alt"></i></div>
+            <div class="s-num">3</div>
+            <div class="s-lbl">Dusun</div>
         </div>
         <div class="s-card">
             <div class="s-icon"><i class="fas fa-calendar"></i></div>
