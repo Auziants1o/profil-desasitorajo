@@ -133,7 +133,7 @@
 .umkm-card p { font-size: 12px; color: var(--text-muted); }
 
 /* ===== GALERI ===== */
-.galeri-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; }
+.galeri-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(180px, 1fr)); gap: 12px; }
 .galeri-item { position: relative; border-radius: 12px; overflow: hidden; aspect-ratio: 4/3; cursor: pointer; }
 .galeri-item img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.4s ease; display: block; }
 .galeri-item img[src=""], .galeri-item img:not([src]) { display: none; }

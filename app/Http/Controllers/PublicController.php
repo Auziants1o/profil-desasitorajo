@@ -29,7 +29,7 @@ class PublicController extends Controller
             (object)['file' => '/images/momen/WhatsApp%20Image%202026-07-03%20at%2007.36.37.jpeg', 'judul' => 'Gotong Royong'],
             (object)['file' => '/images/momen/WhatsApp%20Image%202026-07-21%20at%2022.32.40.jpeg', 'judul' => 'Acara Desa'],
         ]);
-        $galeriTerbaru = $galeri->take(7);
+        $galeriTerbaru = $galeri;
         return view('beranda', compact('totalPenduduk', 'totalPerangkat', 'galeriTerbaru'));
     }
 
