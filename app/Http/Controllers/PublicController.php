@@ -2,18 +2,14 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Perangkat;
-use App\Models\Penduduk;
-use App\Models\Umkm;
-use App\Models\Galeri;
 use Illuminate\Http\Request;
 
 class PublicController extends Controller
 {
     public function beranda()
     {
-        $totalPenduduk = 2043; // Hardcoded as requested
-        $totalPerangkat = 12; // Hardcoded to avoid DB query
+        $totalPenduduk = 2043; // Hardcoded
+        $totalPerangkat = 9; // Hardcoded
         $galeri = collect([
             (object)['file' => '/images/momen/Hari%20Raya%20Idul%20Adha.jpg', 'judul' => 'Hari Raya Idul Adha'],
             (object)['file' => '/images/momen/Latihan%20Pacu%20Jalur%20Persiapan%20Rayon%202.jpeg', 'judul' => 'Latihan Pacu Jalur Persiapan Rayon 2'],
@@ -40,8 +36,17 @@ class PublicController extends Controller
 
     public function perangkat()
     {
-        // Hardcoded while DB is offline
-        $perangkat = collect([]);
+        $perangkat = collect([
+            (object)['nama' => 'Ropis Indra, S.Pd.I',      'jabatan' => 'Kepala Desa',                    'pendidikan' => 'SMA/Sederajat', 'foto' => '/images/perangkat/ropis indra kepala desa.jpeg',               'urutan' => 1],
+            (object)['nama' => 'Indra Franata',             'jabatan' => 'Sekretaris Desa',                'pendidikan' => 'SMA/Sederajat', 'foto' => '/images/perangkat/indra franata sekretaris desa.jpeg',         'urutan' => 2],
+            (object)['nama' => 'Dede Aptrian Todi, S.IP',  'jabatan' => 'Bendahara',                      'pendidikan' => 'Sarjana/S1',    'foto' => '/images/perangkat/dede aptrian todi bendahara desa.jpeg',      'urutan' => 3],
+            (object)['nama' => 'Siska Oktalia',             'jabatan' => 'Kepala Urusan Pemerintahan',     'pendidikan' => 'SMA/Sederajat', 'foto' => '/images/perangkat/siska oktalia urusan pemerintahan.jpeg',     'urutan' => 4],
+            (object)['nama' => 'Adis Saputra, S.IP',       'jabatan' => 'Kepala Urusan Pembangunan',      'pendidikan' => 'Sarjana/S1',    'foto' => '/images/perangkat/adis saputra urusan pembangunan.jpeg',      'urutan' => 5],
+            (object)['nama' => 'Astri Andrina, SE',         'jabatan' => 'Kepala Urusan Umum',             'pendidikan' => 'Sarjana/S1',    'foto' => '/images/perangkat/astri andrina urusan umum.jpeg',            'urutan' => 6],
+            (object)['nama' => 'Randi Desra, S.Pd',        'jabatan' => 'Kepala Dusun Bunai Jaya',        'pendidikan' => 'Sarjana/S1',    'foto' => '/images/perangkat/Randi Desra bunai jaya.jpeg',               'urutan' => 7],
+            (object)['nama' => 'Uswandi',                   'jabatan' => 'Kepala Dusun Tengah',            'pendidikan' => '-',             'foto' => '/images/perangkat/uswandi dusun tengah.jpeg',                 'urutan' => 8],
+            (object)['nama' => 'Erwandi',                   'jabatan' => 'Kepala Dusun Sei. Kembar',       'pendidikan' => '-',             'foto' => '/images/perangkat/erwandi sei. kembar.jpeg',                  'urutan' => 9],
+        ]);
         return view('perangkat', compact('perangkat'));
     }
 
