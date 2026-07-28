@@ -37,7 +37,7 @@ class PublicController extends Controller
     public function perangkat()
     {
         $perangkat = collect([
-            (object)['nama' => 'Ropis Indra, S.Pd.I',      'jabatan' => 'Kepala Desa',                    'pendidikan' => 'SMA/Sederajat', 'foto' => '/images/perangkat/ropis indra kepala desa.jpeg',               'urutan' => 1],
+            (object)['nama' => 'Ropis Indra, S.Pd.I',      'jabatan' => 'Kepala Desa',                    'pendidikan' => 'Sarjana/S1', 'foto' => '/images/perangkat/ropis indra kepala desa.jpeg',               'urutan' => 1],
             (object)['nama' => 'Indra Franata',             'jabatan' => 'Sekretaris Desa',                'pendidikan' => 'SMA/Sederajat', 'foto' => '/images/perangkat/indra franata sekretaris desa.jpeg',         'urutan' => 2],
             (object)['nama' => 'Dede Aptrian Todi, S.IP',  'jabatan' => 'Bendahara',                      'pendidikan' => 'Sarjana/S1',    'foto' => '/images/perangkat/dede aptrian todi bendahara desa.jpeg',      'urutan' => 3],
             (object)['nama' => 'Siska Oktalia',             'jabatan' => 'Kepala Urusan Pemerintahan',     'pendidikan' => 'SMA/Sederajat', 'foto' => '/images/perangkat/siska oktalia urusan pemerintahan.jpeg',     'urutan' => 4],

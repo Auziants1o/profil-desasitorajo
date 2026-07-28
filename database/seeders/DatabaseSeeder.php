@@ -24,7 +24,7 @@ class DatabaseSeeder extends Seeder
 
         // 2. Data Perangkat Desa
         $perangkat = [
-            ['Kepala Desa', 'Ropis Indra, S.Pd.I', '-', 'SMA/Sederajat', '/images/perangkat/ropis indra kepala desa.jpeg'],
+            ['Kepala Desa', 'Ropis Indra, S.Pd.I', '-', 'Sarjana/S1', '/images/perangkat/ropis indra kepala desa.jpeg'],
             ['Sekretaris Desa', 'Indra Franata', '-', 'SMA/Sederajat', '/images/perangkat/indra franata sekretaris desa.jpeg'],
             ['Bendahara', 'Dede Aptrian Todi, S.IP', '-', 'Sarjana/S1', '/images/perangkat/dede aptrian todi bendahara desa.jpeg'],
             ['Kepala Urusan Pemerintahan', 'Siska Oktalia', '-', 'SMA/Sederajat', '/images/perangkat/siska oktalia urusan pemerintahan.jpeg'],
